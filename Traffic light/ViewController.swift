@@ -31,6 +31,7 @@ class ViewController: UIViewController {
     
         if redView.alpha < 1 && yellowView.alpha < 1 && greenView.alpha < 1 {
             redView.alpha = 1
+            buttonNext.setTitle("Next", for: .normal)
         } else if redView.alpha == 1 {
             yellowView.alpha = 1
             redView.alpha = 0.3

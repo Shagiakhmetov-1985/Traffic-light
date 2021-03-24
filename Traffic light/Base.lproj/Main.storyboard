@@ -51,7 +51,7 @@
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="258" id="ohk-Rw-P4S"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <state key="normal" title="Next">
+                                <state key="normal" title="Start">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
