@@ -23,25 +23,20 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SmN-B1-Wxb">
                                         <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
                                         <color key="backgroundColor" name="systemRedColor" catalog="System" colorSpace="catalog"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" secondItem="SmN-B1-Wxb" secondAttribute="height" multiplier="1:1" id="PQC-hX-SDe"/>
-                                        </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dhd-61-CQg">
                                         <rect key="frame" x="0.0" y="218" width="150" height="150"/>
                                         <color key="backgroundColor" systemColor="systemYellowColor"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" secondItem="dhd-61-CQg" secondAttribute="height" multiplier="1:1" id="E5m-bz-OcU"/>
-                                        </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8SF-et-1tx">
                                         <rect key="frame" x="0.0" y="436" width="150" height="150"/>
                                         <color key="backgroundColor" systemColor="systemGreenColor"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" secondItem="8SF-et-1tx" secondAttribute="height" multiplier="1:1" id="jFv-Ow-kij"/>
-                                        </constraints>
                                     </view>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="dhd-61-CQg" firstAttribute="centerY" secondItem="WDy-wf-ydm" secondAttribute="centerY" id="BUC-Ah-4Jr"/>
+                                    <constraint firstItem="dhd-61-CQg" firstAttribute="top" secondItem="WDy-wf-ydm" secondAttribute="top" constant="218" id="IFG-Qh-ixc"/>
+                                </constraints>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9dv-df-amd">
                                 <rect key="frame" x="78" y="785" width="258" height="53"/>
@@ -64,6 +59,7 @@
                         <constraints>
                             <constraint firstItem="9dv-df-amd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="78" id="Ahx-kM-Mp2"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="WDy-wf-ydm" secondAttribute="trailing" constant="132" id="Fzt-6I-ETZ"/>
+                            <constraint firstItem="9dv-df-amd" firstAttribute="top" secondItem="WDy-wf-ydm" secondAttribute="bottom" constant="107" id="N5i-de-Eq1"/>
                             <constraint firstItem="WDy-wf-ydm" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Ph0-gc-V4u"/>
                             <constraint firstItem="WDy-wf-ydm" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="48" id="Spx-Ay-Itx"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="9dv-df-amd" secondAttribute="bottom" constant="24" id="lPB-jS-4IC"/>
