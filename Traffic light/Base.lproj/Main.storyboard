@@ -17,54 +17,58 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="68" translatesAutoresizingMaskIntoConstraints="NO" id="WDy-wf-ydm">
-                                <rect key="frame" x="132" y="92" width="150" height="586"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="48" translatesAutoresizingMaskIntoConstraints="NO" id="WDy-wf-ydm">
+                                <rect key="frame" x="132" y="79" width="150" height="546"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SmN-B1-Wxb">
                                         <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
                                         <color key="backgroundColor" name="systemRedColor" catalog="System" colorSpace="catalog"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="SmN-B1-Wxb" secondAttribute="height" multiplier="1:1" id="9vJ-o9-FnL"/>
+                                        </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dhd-61-CQg">
-                                        <rect key="frame" x="0.0" y="218" width="150" height="150"/>
+                                        <rect key="frame" x="0.0" y="198" width="150" height="150"/>
                                         <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="dhd-61-CQg" secondAttribute="height" multiplier="1:1" id="jzJ-aN-dG0"/>
+                                        </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8SF-et-1tx">
-                                        <rect key="frame" x="0.0" y="436" width="150" height="150"/>
+                                        <rect key="frame" x="0.0" y="396" width="150" height="150"/>
                                         <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="8SF-et-1tx" secondAttribute="height" multiplier="1:1" id="j3U-bn-f1F"/>
+                                        </constraints>
                                     </view>
                                 </subviews>
-                                <constraints>
-                                    <constraint firstItem="dhd-61-CQg" firstAttribute="centerY" secondItem="WDy-wf-ydm" secondAttribute="centerY" id="BUC-Ah-4Jr"/>
-                                    <constraint firstItem="dhd-61-CQg" firstAttribute="top" secondItem="WDy-wf-ydm" secondAttribute="top" constant="218" id="IFG-Qh-ixc"/>
-                                </constraints>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9dv-df-amd">
-                                <rect key="frame" x="78" y="785" width="258" height="53"/>
+                                <rect key="frame" x="97" y="790" width="220" height="48"/>
                                 <color key="backgroundColor" name="AccentColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="53" id="8tX-7s-VdJ"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="258" id="ohk-Rw-P4S"/>
+                                    <constraint firstAttribute="width" secondItem="9dv-df-amd" secondAttribute="height" multiplier="55:12" id="hCB-o3-Yre"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="Start">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="actionButtonNext:" destination="BYZ-38-t0r" eventType="touchUpInside" id="h0d-1c-Evg"/>
+                                    <action selector="actionButtonStart" destination="BYZ-38-t0r" eventType="touchUpInside" id="WDP-1B-IKz"/>
                                 </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="labelColor"/>
                         <constraints>
-                            <constraint firstItem="9dv-df-amd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="78" id="Ahx-kM-Mp2"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="WDy-wf-ydm" secondAttribute="trailing" constant="132" id="Fzt-6I-ETZ"/>
-                            <constraint firstItem="9dv-df-amd" firstAttribute="top" secondItem="WDy-wf-ydm" secondAttribute="bottom" constant="107" id="N5i-de-Eq1"/>
+                            <constraint firstItem="WDy-wf-ydm" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="35" id="3WL-vH-HZd"/>
+                            <constraint firstItem="8SF-et-1tx" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="75:448" id="CUk-fY-GL5"/>
                             <constraint firstItem="WDy-wf-ydm" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Ph0-gc-V4u"/>
-                            <constraint firstItem="WDy-wf-ydm" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="48" id="Spx-Ay-Itx"/>
+                            <constraint firstItem="dhd-61-CQg" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="75:448" id="SBw-5W-OEl"/>
+                            <constraint firstItem="SmN-B1-Wxb" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="75:448" id="VYH-tc-euD"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="9dv-df-amd" secondAttribute="bottom" constant="24" id="lPB-jS-4IC"/>
                             <constraint firstItem="9dv-df-amd" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="moD-Xq-8Lh"/>
-                            <constraint firstItem="WDy-wf-ydm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="132" id="oU9-SN-4GA"/>
+                            <constraint firstItem="9dv-df-amd" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="110:448" id="wcx-tA-aSQ"/>
                         </constraints>
                     </view>
                     <connections>
